@@ -22,6 +22,7 @@ graph TD
     
     UI --> User
     AudioOut --> User
+
 Estructura del Proyecto
 /src: Código fuente principal de la aplicación.
 
