@@ -19,7 +19,7 @@ Soy un profesional enfocado en la seguridad en la nube y la gestión de datos, a
 
 ## 🚀 Proyectos Destacados
 
-### 1. Nira - AI Persona Coach & Biometric Interviewer
+### 1. Nira - AI Persona Instructor & Biometric Interviewer
 **Arquitectura de Sistemas | Inteligencia Artificial | Python**
 Nira es una aplicación funcional diseñada para simular entrevistas de estrés mediante biometría. Fui el arquitecto de esta solución, integrando inteligencia artificial generativa para construir la lógica y el código fuente.
 * **Características:** Utiliza un LLM local (Llama 3) para las interacciones, procesamiento de audio y análisis de visión computacional para leer microexpresiones (parpadeos y atención).
