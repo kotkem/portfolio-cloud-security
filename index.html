@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luis | Cloud Security & Datos</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-main: #c9d1d9;
+            --text-muted: #8b949e;
+            --accent: #58a6ff;
+            --badge-bg: #1f6feb;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            padding: 80px 20px 40px;
+            border-bottom: 1px solid #30363d;
+        }
+        h1 { margin: 0; font-size: 2.5rem; color: var(--accent); }
+        h2 { font-weight: 400; font-size: 1.2rem; color: var(--text-muted); margin-top: 10px; }
+        .badge {
+            display: inline-block;
+            background-color: var(--badge-bg);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        .section-title { font-size: 1.8rem; color: white; border-bottom: 2px solid var(--accent); padding-bottom: 10px; margin-bottom: 30px; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+        .card:hover { transform: translateY(-5px); border-color: var(--accent); }
+        .card h3 { margin-top: 0; color: var(--accent); }
+        .tech-stack { font-size: 0.85rem; color: var(--text-muted); margin-top: 15px; font-style: italic; }
+        
+        footer { text-align: center; padding: 40px; color: var(--text-muted); font-size: 0.9rem; border-top: 1px solid #30363d; margin-top: 40px;}
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Luis</h1>
+        <h2>Gobierno de Datos | Ciberseguridad | Arquitectura Cloud</h2>
+        <span class="badge">AWS Certified Cloud Practitioner</span>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">Proyectos Destacados</h2>
+        
+        <div class="grid">
+            <div class="card">
+                <h3>Nira - AI Persona Coach</h3>
+                <p>Aplicación funcional que simula entrevistas de estrés. Utiliza análisis de visión computacional para leer microexpresiones y procesamiento de audio para generar respuestas dinámicas.</p>
+                <div class="tech-stack">Stack: Llama 3 (Local) | Python | SVG Animation</div>
+            </div>
+
+            <div class="card">
+                <h3>Cloud Security Code Review</h3>
+                <p>Herramienta desarrollada para auditar vulnerabilidades directamente en funciones AWS Lambda. Aplica metodologías de Bug Bounty en entornos serverless para asegurar la integridad de los datos.</p>
+                <div class="tech-stack">Stack: AWS | Ciberseguridad | Python</div>
+            </div>
+
+            <div class="card">
+                <h3>Trading Algorítmico Cloud</h3>
+                <p>Arquitectura de un sistema de trading profesional con un fuerte enfoque en la gestión de riesgos y la evolución algorítmica desplegado en la nube.</p>
+                <div class="tech-stack">Stack: AWS Architecture | Python | Algoritmos Genéticos</div>
+            </div>
+
+            <div class="card">
+                <h3>Desarrollo Interactivo 3D</h3>
+                <p>Flujo de trabajo creativo documentado utilizando modelos de IA. Creación de una "Sprite Factory" automatizada a partir de poses 3D para desarrollo de lógica de videojuegos.</p>
+                <div class="tech-stack">Stack: ComfyUI Desktop | Blender 4.5 LTS</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Impulsado por GitHub Actions & alojado en AWS S3.</p>
+    </footer>
+
+</body>
+</html>
