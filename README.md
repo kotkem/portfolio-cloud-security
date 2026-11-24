@@ -1,48 +1,18 @@
-# Hola, soy Luis 👋
+# Portafolio de Luis Poblete
 
-**AWS Certified Cloud Practitioner | Ciberseguridad | Gobierno de Datos | Integración de IA**
+Página personal con mis proyectos de ciberseguridad, cloud e IA.
 
-Soy un profesional enfocado en la seguridad en la nube y la gestión de datos, apasionado por construir arquitecturas seguras y eficientes. Combino mi conocimiento en infraestructura cloud con automatización y herramientas de inteligencia artificial para auditar entornos, mitigar riesgos y optimizar procesos. Me destaco por mi enfoque de "aprender haciendo" y la capacidad de orquestar soluciones tecnológicas complejas.
+**Ver en línea:** https://kotkem.github.io/portfolio-cloud-security/
 
-📍 Basado en Concepción, Chile.
+## Cómo lo hice
 
----
+1. **Primera versión (marzo 2026):** sitio estático en un bucket de Amazon S3, servido con CloudFront. Cada `push` a `main` lo subía automáticamente con un workflow de GitHub Actions (`aws s3 sync`).
+2. **Versión actual:** mi cuenta gratuita de AWS terminó, así que lo migré a GitHub Pages. Borré el workflow y los secretos con las llaves de AWS del repositorio.
 
-## 🏆 Certificaciones y Habilidades Core
+## Qué aprendí
 
-* **Certificación:** AWS Certified Cloud Practitioner.
-* **Seguridad & Auditoría:** Bug Bounty, Cloud Security, Hardening de Sistemas Linux, Gestión de Riesgos.
-* **Desarrollo & Automatización:** Python (lógica y automatización), GitHub, ComfyUI.
-* **Inteligencia Artificial:** Integración de LLMs locales (Llama 3), agentes de IA (OpenClaw), flujos de trabajo generativos.
+- A automatizar un despliegue con GitHub Actions.
+- A guardar credenciales como *secrets* y no dentro del código.
+- Qué mejoraría la próxima vez: usar OIDC en vez de llaves de acceso de larga duración, y darle al usuario de IAM permiso solo sobre ese bucket (mínimo privilegio).
 
----
-
-## 🚀 Proyectos Destacados
-
-### 1. Nira - AI Persona Instructor & Biometric Interviewer
-**Arquitectura de Sistemas | Inteligencia Artificial | Python**
-Nira es una aplicación funcional diseñada para simular entrevistas de estrés mediante biometría. Fui el arquitecto de esta solución, integrando inteligencia artificial generativa para construir la lógica y el código fuente.
-* **Características:** Utiliza un LLM local (Llama 3) para las interacciones, procesamiento de audio y análisis de visión computacional para leer microexpresiones (parpadeos y atención).
-* **UI/UX:** Diseño de interfaz personalizado que incluye un logo SVG animado multicapa con estética minimalista. 
-
-### 2. Cloud Security Code Review Tool
-**AWS | Ciberseguridad | Serverless**
-Herramienta práctica desarrollada para auditar y detectar vulnerabilidades de seguridad específicamente dentro de funciones AWS Lambda. 
-* **Impacto:** Demuestra la aplicación de metodologías de caza de recompensas (Bug Bounty) y revisión de código directamente sobre infraestructuras serverless.
-
-### 3. Sistema de Trading Algorítmico Cloud
-**Arquitectura Cloud | Gestión de Riesgos | Algoritmos Genéticos**
-Diseño y conceptualización de un sistema de trading profesional desplegado en la nube. 
-* **Enfoque:** Estructuración de la arquitectura del sistema, priorizando una estrategia sólida de gestión de riesgos e investigando la evolución algorítmica.
-
-### 4. Flujos de Trabajo Creativos y Desarrollo 3D
-**Blender 4.5 LTS | ComfyUI Desktop | Lógica de Juegos**
-Desarrollo de un videojuego temático de "máquinas vs. aliens".
-* **Desarrollo Técnico:** Creación de una "Sprite Factory" en la versión de escritorio de ComfyUI para automatizar la generación de sprites 2D a partir de poses base pixeladas, y modelado de personajes 3D.
-
----
-
-## 📈 Mejora Continua
-Actualmente estoy perfeccionando mis bases en Python para la resolución de problemas lógicos y reforzando mis conocimientos en hardening de infraestructuras para seguir creciendo en el área de la seguridad ofensiva y el gobierno de datos corporativos.
-
-
+El código lo escribí con asistencia de herramientas de IA; la arquitectura y el despliegue los configuré yo.

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luis | Cloud Security & Datos</title>
+    <title>Luis Poblete | Ciberseguridad y Cloud</title>
+    <meta name="description" content="Portafolio de Luis Poblete: Técnico en Ciberseguridad y AWS Certified Cloud Practitioner. Biobío, Chile.">
     <style>
         :root {
             --bg-color: #0d1117;
@@ -23,7 +24,7 @@
         }
         header {
             text-align: center;
-            padding: 80px 20px 40px;
+            padding: 70px 20px 40px;
             border-bottom: 1px solid #30363d;
         }
         h1 { margin: 0; font-size: 2.5rem; color: var(--accent); }
@@ -37,11 +38,13 @@
             font-size: 0.9rem;
             font-weight: bold;
             margin-top: 15px;
+            text-decoration: none;
         }
+        .intro { max-width: 700px; margin: 25px auto 0; color: var(--text-main); }
+        .links a { color: var(--accent); margin: 0 10px; text-decoration: none; }
         .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
         .section-title { font-size: 1.8rem; color: white; border-bottom: 2px solid var(--accent); padding-bottom: 10px; margin-bottom: 30px; }
-        
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
         .card {
             background-color: var(--card-bg);
             border: 1px solid #30363d;
@@ -51,51 +54,57 @@
         }
         .card:hover { transform: translateY(-5px); border-color: var(--accent); }
         .card h3 { margin-top: 0; color: var(--accent); }
+        .card h3 a { color: var(--accent); text-decoration: none; }
         .tech-stack { font-size: 0.85rem; color: var(--text-muted); margin-top: 15px; font-style: italic; }
-        
-        footer { text-align: center; padding: 40px; color: var(--text-muted); font-size: 0.9rem; border-top: 1px solid #30363d; margin-top: 40px;}
+        .soon { opacity: 0.75; border-style: dashed; }
+        footer { text-align: center; padding: 40px; color: var(--text-muted); font-size: 0.9rem; border-top: 1px solid #30363d; margin-top: 40px; }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Luis</h1>
-        <h2>Gobierno de Datos | Ciberseguridad | Arquitectura Cloud</h2>
-        <span class="badge">AWS Certified Cloud Practitioner</span>
+        <h1>Luis Poblete</h1>
+        <h2>Técnico en Ciberseguridad | Cloud (AWS) | Monitoreo y soporte TI</h2>
+        <a class="badge" href="https://www.credly.com/badges/81ba70bb-edca-4b2b-87ae-40f2d85b97fa/public_url" target="_blank" rel="noopener">AWS Certified Cloud Practitioner ↗</a>
+        <p class="intro">Soy Técnico de Nivel Superior en Ciberseguridad (IACC) y egresado del programa AWS re/Start. Antes de entrar a TI trabajé como guardia de seguridad en turnos 7x7 en una planta solar de Antofagasta: controlaba accesos, llevaba registros y reportaba incidentes. Hoy busco hacer eso mismo, pero con logs y alertas. Vivo en el Biobío, Chile.</p>
+        <p class="links">
+            <a href="https://www.linkedin.com/in/luis-poblete-021a48173/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/kotkem" target="_blank" rel="noopener">GitHub</a>
+        </p>
     </header>
 
     <div class="container">
-        <h2 class="section-title">Proyectos Destacados</h2>
-        
+        <h2 class="section-title">Proyectos</h2>
+
         <div class="grid">
             <div class="card">
-                <h3><a href="https://github.com/kotkem/nira-ai-interviewer" target="_blank" style="color: var(--accent); text-decoration: none;">Nira - AI Personal Instructor ↗</a></h3>
-                <p>Aplicación funcional que simula entrevistas de estrés. Utiliza análisis de visión computacional para leer microexpresiones y procesamiento de audio para generar respuestas dinámicas.</p>
-                <div class="tech-stack">Stack: Llama 3 (Local) | Python | SVG Animation</div>
+                <h3><a href="https://github.com/kotkem/nira-ai-interviewer" target="_blank" rel="noopener">Nira: entrevistador con IA ↗</a></h3>
+                <p>App de escritorio en Python que simula entrevistas de trabajo. El modelo de lenguaje (Llama 3) corre en mi PC con Ollama; la app escucha la respuesta, la transcribe y analiza la cámara con OpenCV y MediaPipe (parpadeo y atención). La construí con asistencia de herramientas de IA.</p>
+                <div class="tech-stack">Python | PyQt6 | Ollama + Llama 3 | OpenCV | MediaPipe</div>
             </div>
 
             <div class="card">
-                <h3>Cloud Security Code Review</h3>
-                <p>Herramienta desarrollada para auditar vulnerabilidades directamente en funciones AWS Lambda. Aplica metodologías de Bug Bounty en entornos serverless para asegurar la integridad de los datos.</p>
-                <div class="tech-stack">Stack: AWS | Ciberseguridad | Python</div>
+                <h3><a href="https://github.com/kotkem/portfolio-cloud-security" target="_blank" rel="noopener">Este portafolio ↗</a></h3>
+                <p>Primero lo publiqué en Amazon S3 con CloudFront y despliegue automático con GitHub Actions. Cuando terminó mi cuenta gratuita de AWS, lo migré a GitHub Pages.</p>
+                <div class="tech-stack">HTML/CSS | GitHub Actions | Amazon S3 | CloudFront | GitHub Pages</div>
             </div>
 
             <div class="card">
-                <h3>Trading Algorítmico Cloud</h3>
-                <p>Arquitectura de un sistema de trading profesional con un fuerte enfoque en la gestión de riesgos y la evolución algorítmica desplegado en la nube.</p>
-                <div class="tech-stack">Stack: AWS Architecture | Python | Algoritmos Genéticos</div>
+                <h3><a href="https://github.com/kotkem/aws-restart-python" target="_blank" rel="noopener">AWS re/Start: Python ↗</a></h3>
+                <p>Ejercicios de Python del programa AWS re/Start (482 horas). En los laboratorios del curso también configuré IAM con MFA y mínimo privilegio, VPC con subredes públicas y privadas, Security Groups, NACLs, scripts con AWS CLI y reglas de AWS WAF contra inyección SQL y XSS.</p>
+                <div class="tech-stack">AWS | Python | Bash | Linux</div>
             </div>
 
-            <div class="card">
-                <h3>Desarrollo Interactivo 3D</h3>
-                <p>Flujo de trabajo creativo documentado utilizando modelos de IA. Creación de una "Sprite Factory" automatizada a partir de poses 3D para desarrollo de lógica de videojuegos.</p>
-                <div class="tech-stack">Stack: ComfyUI Desktop | Blender 4.5 LTS</div>
+            <div class="card soon">
+                <h3>Próximamente: mini SOC casero</h3>
+                <p>Wazuh en máquinas virtuales para detectar y documentar ataques simulados (fuerza bruta SSH y escaneos con Nmap).</p>
+                <div class="tech-stack">Wazuh | VirtualBox | Linux</div>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>Impulsado por GitHub Actions & alojado en AWS S3.</p>
+        <p>Publicado con GitHub Pages.</p>
     </footer>
 
 </body>
